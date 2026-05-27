@@ -1,0 +1,252 @@
+/* =============================================
+   SHARED.CSS — Global styles for all pages
+   Pakin Narkjaroen Portfolio
+============================================= */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: 'Inter', sans-serif;
+
+  /* Colors */
+  --white: #ffffff;
+  --bg: #ffffff;
+  --bg-light: #f5f6fa;
+  --bg-subtle: #fafafa;
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-muted: #888888;
+  --border: #e5e7eb;
+  --border-dark: #d1d5db;
+
+  /* Accent */
+  --blue: #2563eb;
+  --blue-light: #dbeafe;
+  --blue-dark: #1d4ed8;
+  --red: #dc2626;
+  --red-light: #fee2e2;
+  --purple: #7c3aed;
+  --purple-light: #ede9fe;
+  --green: #16a34a;
+  --green-light: #dcfce7;
+
+  /* Spacing */
+  --nav-h: 52px;
+  --page-px: 40px;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --radius-xs: 4px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 6px rgba(0,0,0,0.06);
+  --shadow: 0 2px 14px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+html, body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-primary);
+  font-size: 13.5px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body { flex: 1; }
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { font-family: var(--font); cursor: pointer; }
+input, textarea { font-family: var(--font); }
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--page-px);
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav-link {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  padding: 5px 11px;
+  border-radius: var(--radius-sm);
+  transition: color 0.15s;
+}
+.nav-link:hover { color: var(--text-primary); }
+.nav-link.active { color: var(--text-primary); font-weight: 500; }
+
+.btn-hire {
+  margin-left: 10px;
+  padding: 6px 15px;
+  background: var(--text-primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.btn-hire:hover { background: #2a2a2a; }
+.btn-hire.blue { background: var(--blue); }
+.btn-hire.blue:hover { background: var(--blue-dark); }
+
+/* =====================
+   PAGE FOOTER
+===================== */
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px var(--page-px);
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+.footer-links a { color: var(--text-muted); font-size: 11.5px; }
+.footer-links a:hover { color: var(--text-primary); }
+
+/* =====================
+   TAGS / BADGES
+===================== */
+.tag {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  margin: 2px 2px 2px 0;
+  line-height: 1.6;
+}
+.tag-blue   { background: var(--blue-light);   color: var(--blue); }
+.tag-red    { background: var(--red-light);    color: var(--red); }
+.tag-purple { background: var(--purple-light); color: var(--purple); }
+.tag-green  { background: var(--green-light);  color: var(--green); }
+.tag-gray   { background: #f3f4f6; color: #374151; }
+.tag-dark   { background: #f3f4f6; color: #374151; }
+.tag-outline {
+  background: transparent;
+  border: 1px solid var(--border-dark);
+  color: var(--text-secondary);
+}
+.tag-outline.on {
+  background: var(--text-primary);
+  color: var(--white);
+  border-color: var(--text-primary);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn-primary {
+  padding: 8px 18px;
+  background: var(--text-primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.btn-primary:hover { background: #2a2a2a; }
+
+.btn-secondary {
+  padding: 8px 18px;
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.btn-secondary:hover { background: var(--bg-light); }
+
+/* =====================
+   PAGE WRAPPER
+===================== */
+.page-wrapper {
+  flex: 1;
+  padding: 36px var(--page-px) 28px;
+}
+
+/* =====================
+   SECTION LABEL
+===================== */
+.section-label {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.section-label.blue { color: var(--blue); }
+
+.section-heading {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+
+/* =====================
+   DARK BANNER BG
+===================== */
+.dark-banner {
+  background: linear-gradient(135deg, #12121e 0%, #1a1f35 50%, #0e2a4a 100%);
+  border-radius: var(--radius);
+}
+
+/* =====================
+   RESPONSIVE BASE
+===================== */
+@media (max-width: 768px) {
+  :root { --page-px: 18px; }
+  .navbar { padding: 0 18px; }
+  .nav-link { padding: 5px 7px; font-size: 11.5px; }
+  .page-footer { flex-direction: column; gap: 8px; text-align: center; padding: 12px 18px; }
+}

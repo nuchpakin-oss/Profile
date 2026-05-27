@@ -1,0 +1,148 @@
+/* =============================================
+   SKILLS.CSS
+============================================= */
+
+.skills-main { max-width: 1080px; }
+
+/* Header */
+.skills-header { margin-bottom: 28px; }
+
+.page-title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  max-width: 560px;
+  line-height: 1.68;
+}
+
+/* Grid rows */
+.skills-top-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.skills-bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+/* Skill Card */
+.skill-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 18px 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 14px;
+}
+
+.sk-icon  { font-size: 14px; color: var(--text-muted); }
+.sk-title { font-size: 13.5px; font-weight: 700; color: var(--text-primary); }
+.sk-desc  { font-size: 11px; color: var(--text-muted); line-height: 1.55; margin-top: 10px; }
+
+/* Skill bars */
+.skill-bars { margin-bottom: 4px; }
+
+.sb-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 11.5px;
+}
+
+.sb-label { min-width: 78px; color: var(--text-secondary); }
+.sb-track { flex: 1; height: 5px; background: #eef0f3; border-radius: 3px; overflow: hidden; }
+.sb-fill  { height: 100%; background: var(--text-primary); border-radius: 3px; }
+.sb-pct   { font-size: 10px; color: var(--text-muted); min-width: 28px; text-align: right; }
+
+/* Tools tags */
+.tools-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 4px; }
+
+/* Mobile list */
+.sk-list { padding-left: 14px; margin-bottom: 4px; }
+.sk-list li { font-size: 11.5px; color: var(--text-secondary); margin-bottom: 5px; list-style: disc; }
+
+/* Database table */
+.db-table { margin-bottom: 4px; }
+.db-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 11.5px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+}
+.db-row:last-child { border-bottom: none; }
+.db-hdr {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.level-pill {
+  font-size: 9.5px;
+  background: var(--bg-light);
+  border-radius: var(--radius-xs);
+  padding: 1px 6px;
+  color: var(--text-secondary);
+}
+
+/* SE grid */
+.se-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 4px;
+}
+.se-item {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.se-check { font-size: 10px; color: var(--blue); }
+
+/* Banner */
+.skills-banner {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.sb-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.sb-code-icon { font-size: 44px; color: rgba(255,255,255,0.10); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .skills-top-row    { grid-template-columns: 1fr; }
+  .skills-bottom-row { grid-template-columns: 1fr; }
+}
