@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- ── NAVBAR ── -->
   <nav class="navbar">
     <div class="nav-brand">Pakin Narkjaroen</div>
     <div class="nav-links">
@@ -23,116 +23,170 @@
     </div>
   </nav>
 
-  <!-- MAIN -->
-  <main class="page-wrapper contact-main">
+  <!-- ── PAGE ── -->
+  <main class="contact-page">
 
-    <!-- Page Header -->
-    <div class="contact-header">
-      <h1 class="page-title">Get in Touch</h1>
-      <p class="page-subtitle">
-        I'm open to new opportunities, collaborations, or just a quick chat about technology and product
-        engineering. Feel free to reach out via the form below, or through my direct contact details.
+    <!-- Header -->
+    <header class="contact-header">
+      <h1 class="contact-title">Get in Touch</h1>
+      <p class="contact-subtitle">
+        I'm open to new opportunities, collaborations, or just a quick chat about<br />
+        technology and product engineering. Feel free to reach out via the form below<br />
+        or through my direct contact details.
       </p>
-    </div>
+    </header>
 
-    <!-- Body -->
+    <!-- Two-column body -->
     <div class="contact-body">
 
-      <!-- LEFT: Direct Contact + Let's Connect + QR -->
-      <div class="contact-left">
+      <!-- ── LEFT COLUMN ── -->
+      <div class="col-left">
 
-        <h3 class="col-heading">Direct Contact</h3>
+        <!-- Direct Contact card -->
+        <div class="direct-card">
+          <h2 class="direct-card__title">Direct Contact</h2>
 
-        <div class="direct-contact-card">
-          <div class="dc-name">Pakin Narkjaroen</div>
-          <div class="dc-role">Web &amp; Mobile Application Developer</div>
-          <div class="dc-divider"></div>
-          <div class="dc-row"><i class="fas fa-phone"></i> 086 507 1819</div>
-          <div class="dc-row"><i class="fas fa-envelope"></i> pakin.nrk@gmail.com</div>
-          <div class="dc-row"><i class="fas fa-map-marker-alt"></i> Nonthaburi, Bangkok 11120</div>
-        </div>
-
-        <!-- Let's Connect -->
-        <div class="lets-connect">
-          <h4 class="lc-heading">Let's Connect</h4>
-          <p class="lc-text">
-            I'm always interested in hearing about new projects, professional opportunities, or work-day
-            collaborations. Share your portfolio or linked-in to start a conversation.
-          </p>
-          <div class="lc-field-row">
-            <i class="fab fa-linkedin lc-icon"></i>
-            <span class="lc-field-label">LinkedIn Profile</span>
-          </div>
-          <div class="lc-field-row">
-            <i class="fab fa-github lc-icon"></i>
-            <span class="lc-field-label">GitHub Repository</span>
-          </div>
-        </div>
-
-        <!-- QR + email input -->
-        <div class="qr-row">
-          <div class="qr-box">
-            <div class="qr-label">Scan for Resume</div>
-            <div class="qr-graphic"><i class="fas fa-qrcode"></i></div>
-            <div class="qr-caption">Scan this QR to</div>
-          </div>
-          <div class="qr-right">
-            <div class="email-field">
-              <input type="email" placeholder="hello@email.com" class="qr-email-input" />
-              <button class="qr-email-btn">Share Info</button>
+          <div class="dc-item">
+            <div class="dc-icon-wrap dc-icon-wrap--blue">
+              <i class="fas fa-envelope"></i>
             </div>
-            <p class="qr-note">
-              * Your information is kept private and will not be shared with third parties without your consent.
+            <div class="dc-text">
+              <span class="dc-label">EMAIL</span>
+              <span class="dc-value">nuhcpakin@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="dc-item">
+            <div class="dc-icon-wrap dc-icon-wrap--blue">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="dc-text">
+              <span class="dc-label">PHONE</span>
+              <span class="dc-value">086-057-9119</span>
+            </div>
+          </div>
+
+          <div class="dc-item">
+            <div class="dc-icon-wrap dc-icon-wrap--blue">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="dc-text">
+              <span class="dc-label">LOCATION</span>
+              <span class="dc-value">Bangkok, Thailand</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bangkok city photo -->
+        <div class="city-photo">
+          <div class="city-photo__overlay">
+            <span class="city-badge">
+              <i class="fas fa-map-marker-alt"></i> Based in Bangkok
+            </span>
+          </div>
+        </div>
+
+        <!-- Scan for Resume dark card -->
+        <div class="resume-card">
+          <div class="resume-card__thumb">
+            <!-- mini resume graphic -->
+            <div class="resume-thumb-inner">
+              <div class="rt-line rt-line--heading"></div>
+              <div class="rt-line"></div>
+              <div class="rt-line rt-line--short"></div>
+              <div class="rt-divider"></div>
+              <div class="rt-line"></div>
+              <div class="rt-line rt-line--short"></div>
+            </div>
+          </div>
+          <div class="resume-card__body">
+            <h3 class="resume-card__title">Scan for Resume</h3>
+            <p class="resume-card__desc">
+              Quickly access my professional history and portfolio details on the go.
             </p>
+            <a href="assets/files/Resume.pdf" class="resume-card__link" download>Download PDF &#8595;</a>
           </div>
         </div>
 
-      </div><!-- /contact-left -->
+      </div><!-- /col-left -->
 
-      <!-- RIGHT: Send a Message -->
-      <div class="contact-right">
-        <h3 class="col-heading">Send a Message</h3>
+      <!-- ── RIGHT COLUMN ── -->
+      <div class="col-right">
 
-        <div class="form-row-2">
-          <div class="form-group">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-input" placeholder="Full Name" />
+        <h2 class="lets-title">Let's Connect</h2>
+        <p class="lets-desc">
+          I'm always interested in hearing about new projects, professional
+          opportunities, or technical collaborations. Choose your preferred
+          platform to start a conversation.
+        </p>
+
+        <!-- Network tiles -->
+        <div class="connect-tiles">
+          <a href="https://www.linkedin.com/in/pakin-narkjaroen-304153412/" target="_blank" class="connect-tile">
+            <div class="tile-icon-wrap">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="tile-text">
+              <span class="tile-label">NETWORK</span>
+              <span class="tile-value">LinkedIn Profile</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/nuchpakin-oss" target="_blank" class="connect-tile">
+            <div class="tile-icon-wrap tile-icon-wrap--dark">
+              <i class="fas fa-terminal"></i>
+            </div>
+            <div class="tile-text">
+              <span class="tile-label">CODE</span>
+              <span class="tile-value">GitHub Repository</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Copy email row -->
+        <div class="copy-email-row">
+          <div class="copy-email-left">
+            <i class="fas fa-envelope copy-email-icon"></i>
+            <span class="copy-email-address">nuhcpakin@gmail.com</span>
           </div>
-          <div class="form-group">
-            <label class="form-label">Email Address</label>
-            <input type="email" class="form-input" placeholder="Email Address" />
-          </div>
+          <button class="btn-copy-email" onclick="copyEmail()">
+            <i class="far fa-copy"></i> Copy Email
+          </button>
         </div>
 
-        <div class="form-group">
-          <label class="form-label">Subject</label>
-          <input type="text" class="form-input" placeholder="Subject" />
-        </div>
+        <!-- Response note -->
+        <p class="response-note">
+          * Typically responding within 24 hours for business-related inquiries.
+        </p>
 
-        <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Message"></textarea>
-        </div>
-
-        <button class="btn-send">Send Message &nbsp;<i class="fas fa-paper-plane"></i></button>
-
-      </div><!-- /contact-right -->
+      </div><!-- /col-right -->
 
     </div><!-- /contact-body -->
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="page-footer">
-    <span>Pakin Narkjaroen</span>
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-brand">Pakin Narkjaroen</div>
     <div class="footer-links">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Twitter</a>
-      <a href="#">Email</a>
+      <a href="https://www.linkedin.com/in/pakin-narkjaroen-304153412/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/nuchpakin-oss" target="_blank">GitHub</a>
+      <a href="https://twitter.com/pakin_narkjaroen" target="_blank">Twitter</a>
+      <a href="mailto:nuhcpakin@gmail.com" target="_blank">Email</a>
     </div>
-    <span>&copy; 2024 Pakin Narkjaroen. Built with Passion.</span>
+    <div class="footer-copy">&copy; 2024 Pakin Narkjaroen. Built with Precision.</div>
   </footer>
+
+  <script>
+    function copyEmail() {
+      navigator.clipboard.writeText('nuhcpakin@gmail.com').then(() => {
+        const btn = document.querySelector('.btn-copy-email');
+        const orig = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+        setTimeout(() => btn.innerHTML = orig, 2000);
+      });
+    }
+  </script>
 
 </body>
 </html>
